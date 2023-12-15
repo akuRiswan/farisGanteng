@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf Apps by Riswan</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header-bar">
+      <h1 class="header-title">Bookshelf Apps by Riswan</h1>
+    </header>
+
+    <main>
+      <section class="input-section">
+        <h1>Masukkan Buku Baru</h1>
+        <form id="inputBook">
+          <div class="input">
+            <label for="inputBookTitle">Judul</label>
+            <input type="text" id="inputBookTitle" placeholder="Masukkan Judul Buku..." required />
+          </div>
+          <div class="input">
+            <label for="inputBookAuthor">Penulis</label>
+            <input
+              type="text"
+              id="inputBookAuthor"
+              placeholder="Masukkan Nama Penulis Buku..."
+              required
+            />
+          </div>
+          <div class="input">
+            <label for="inputBookRelease">Rilis</label>
+            <input type="month" id="inputBookRelease" required />
+          </div>
+          <div class="inputButton">
+            <button type="submit" id="inputBookButton" onclick="showDiv('optionSection')">
+              Tambahkan
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <section class="search-section">
+        <h1>Cari Buku</h1>
+        <form id="searchBook">
+          <label for="searchBookTitle">Judul</label>
+          <input type="text" id="searchBookTitle" placeholder="Masukkan Judul Buku..." required />
+          <button type="submit" id="searchBookButton">Cari</button>
+        </form>
+      </section>
+
+      <section class="bookShelf">
+        <h1>Belum Selesai Dibaca</h1>
+        <div id="uncompleteBookshelfList" class="book_list"></div>
+      </section>
+
+      <section class="bookShelf">
+        <h1>Selesai Dibaca</h1>
+        <div id="completeBookshelfList" class="book_list"></div>
+      </section>
+
+      <section class="optionSection">
+        <h1 class="judul">Judul: Buku</h1>
+        <h3 class="penulis">Penulis: Manusia</h3>
+        <p class="rilis">Rilis: Desember 2023</p>
+        <button type="submit" id="option-completed">Sudah dibaca</button>
+        <button type="submit" id="option-uncompleted">Belum selesai dibaca</button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
