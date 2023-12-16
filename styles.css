@@ -36,8 +36,7 @@ main {
 .optionSection {
   background-color: var(--primaryColor);
   transform: translate(0%, -250%);
-  display: flex;
-  /* display: none; */
+  display: none;
   margin: auto;
   flex-direction: column;
   width: 75%;
@@ -47,6 +46,10 @@ main {
   padding: 20px;
   font-family: "Montserrat", sans-serif;
   color: #fff;
+}
+
+.visible {
+  display: flex;
 }
 
 .optionSection .penulis {
@@ -201,11 +204,25 @@ main {
   border-radius: 10px;
   box-shadow: 7px 7px 3px rgba(0, 0, 0, 0.6);
   margin-top: 25px;
+  background-color: var(--primaryColor);
 }
 
-.bookShelf h1 {
+.bookShelf .title {
   font-size: 1.3rem;
   font-family: "Montserrat", sans-serif;
-  color: var(--primaryColor);
+  color: #fff;
   margin: 10px 25px;
+}
+
+.bookSection article {
+  font-family: "Montserrat", sans-serif;
+  margin: 0 25px 15px;
+  padding: 10px;
+  color: #fff;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+.bookSection article button {
+  background-color: brown;
 }

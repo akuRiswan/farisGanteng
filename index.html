@@ -17,25 +17,18 @@
         <form id="inputBook">
           <div class="input">
             <label for="inputBookTitle">Judul</label>
-            <input type="text" id="inputBookTitle" placeholder="Masukkan Judul Buku..." required />
+            <input type="text" id="inputBookTitle" placeholder="Masukkan Judul Buku..." />
           </div>
           <div class="input">
             <label for="inputBookAuthor">Penulis</label>
-            <input
-              type="text"
-              id="inputBookAuthor"
-              placeholder="Masukkan Nama Penulis Buku..."
-              required
-            />
+            <input type="text" id="inputBookAuthor" placeholder="Masukkan Nama Penulis Buku..." />
           </div>
           <div class="input">
             <label for="inputBookRelease">Rilis</label>
-            <input type="month" id="inputBookRelease" required />
+            <input type="month" id="inputBookRelease" />
           </div>
           <div class="inputButton">
-            <button type="submit" id="inputBookButton" onclick="showDiv('optionSection')">
-              Tambahkan
-            </button>
+            <button type="submit" id="inputBookButton">Tambahkan</button>
           </div>
         </form>
       </section>
@@ -50,19 +43,19 @@
       </section>
 
       <section class="bookShelf">
-        <h1>Belum Selesai Dibaca</h1>
+        <h1 class="title">Belum Selesai Dibaca</h1>
         <div id="uncompleteBookshelfList" class="book_list"></div>
       </section>
 
       <section class="bookShelf">
-        <h1>Selesai Dibaca</h1>
+        <h1 class="title">Selesai Dibaca</h1>
         <div id="completeBookshelfList" class="book_list"></div>
       </section>
 
       <section class="optionSection">
-        <h1 class="judul">Judul: Buku</h1>
-        <h3 class="penulis">Penulis: Manusia</h3>
-        <p class="rilis">Rilis: Desember 2023</p>
+        <h1 class="judul"></h1>
+        <h3 class="penulis"></h3>
+        <p class="rilis"></p>
         <button type="submit" id="option-completed">Sudah dibaca</button>
         <button type="submit" id="option-uncompleted">Belum selesai dibaca</button>
       </section>
