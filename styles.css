@@ -35,17 +35,19 @@ main {
 
 .optionSection {
   background-color: var(--primaryColor);
-  transform: translate(0%, -250%);
-  display: none;
-  margin: auto;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  position: fixed;
   flex-direction: column;
-  width: 75%;
+  width: 30%;
   border: 2px solid #000;
   border-radius: 10px;
   box-shadow: 7px 7px 3px rgba(0, 0, 0, 0.6);
   padding: 20px;
   font-family: "Montserrat", sans-serif;
   color: #fff;
+  display: none;
 }
 
 .visible {
@@ -67,7 +69,7 @@ main {
   background-color: rgba(206, 206, 206, 0.7);
   height: 36px;
   padding: 0 2vw;
-  width: 70%;
+  width: 75%;
   margin: 7px auto;
   border: 1.5px solid #000;
   border-radius: 5px;
@@ -162,7 +164,7 @@ main {
 }
 
 #searchBook {
-  margin: 25px 0;
+  margin: 25px 0 0;
   text-align: center;
   display: block;
 }
@@ -224,5 +226,61 @@ main {
 }
 
 .bookSection article button {
-  background-color: brown;
+  border: 1px solid #000;
+  border-radius: 4px;
+  padding: 4px 10px;
+  margin: 10px 10px 0 0;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.5s;
+}
+
+.bookSection article button:hover {
+  transform: translate(0, -5px);
+  font-weight: 700;
+}
+
+.hasilSearch {
+  font-family: "Montserrat", sans-serif;
+  margin: 0 65px 15px;
+}
+
+.hasilSearch article {
+  color: #fff;
+  margin-left: 10px;
+  padding: 15px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  background-color: var(--primaryColor);
+}
+
+.hasilSearch article h1 {
+  font-weight: bold;
+  text-align: start;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  padding: 0;
+}
+
+.hasilSearch article button {
+  border: 1px solid #000;
+  border-radius: 4px;
+  padding: 4px 10px;
+  margin: 10px 10px 0 0;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.5s;
+}
+
+.hasilSearch article button:hover {
+  transform: translate(0, -5px);
+  font-weight: 700;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .optionSection {
+    width: 70%;
+  }
+
+  .hasilSearch {
+    margin: 5px 10px 15px;
+  }
 }

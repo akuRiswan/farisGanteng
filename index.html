@@ -37,9 +37,10 @@
         <h1>Cari Buku</h1>
         <form id="searchBook">
           <label for="searchBookTitle">Judul</label>
-          <input type="text" id="searchBookTitle" placeholder="Masukkan Judul Buku..." required />
-          <button type="submit" id="searchBookButton">Cari</button>
+          <input type="text" id="searchBookTitle" placeholder="Masukkan Judul Buku..." />
+          <button type="button" id="searchBookButton" onclick="handleSearch()">Cari</button>
         </form>
+        <div class="hasilSearch"></div>
       </section>
 
       <section class="bookShelf">
